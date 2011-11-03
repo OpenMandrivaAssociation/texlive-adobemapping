@@ -1,3 +1,9 @@
+# revision 21940
+# category Package
+# catalog-ctan /support/adobemapping
+# catalog-date 2010-10-29 08:36:47 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-adobemapping
 Version:	20101029
 Release:	1
@@ -255,6 +261,7 @@ incorporated.
 %{_texmfdistdir}/fonts/cmap/adobemapping/cmap-current-versions.txt
 %{_texmfdistdir}/fonts/cmap/adobemapping/cmap-readme.txt
 %{_texmfdistdir}/fonts/cmap/adobemapping/mapping-readme.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -265,3 +272,5 @@ incorporated.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
