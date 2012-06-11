@@ -1,16 +1,16 @@
-# revision 21940
+# revision 26261
 # category Package
 # catalog-ctan /support/adobemapping
-# catalog-date 2010-10-29 08:36:47 +0200
-# catalog-license other-free
+# catalog-date 2012-05-08 12:38:17 +0200
+# catalog-license bsd
 # catalog-version undef
 Name:		texlive-adobemapping
-Version:	20101029
-Release:	2
+Version:	20120508
+Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
-License:	OTHER-FREE
+License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
