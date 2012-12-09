@@ -1,4 +1,4 @@
-# revision 28056
+# revision 26261
 # category Package
 # catalog-ctan /support/adobemapping
 # catalog-date 2012-05-08 12:38:17 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-adobemapping
 Version:	20120508
-Release:	2
+Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
@@ -263,3 +263,22 @@ incorporated.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120508-1
++ Revision: 804443
+- Update to latest release.
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101029-2
++ Revision: 749089
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101029-1
++ Revision: 717797
+- texlive-adobemapping
+- texlive-adobemapping
+- texlive-adobemapping
+- texlive-adobemapping
+- texlive-adobemapping
+
