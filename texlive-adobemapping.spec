@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-adobemapping
 Version:	20121025
-Release:	2
+Release:	3
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
