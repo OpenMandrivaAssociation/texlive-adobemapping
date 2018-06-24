@@ -1,5 +1,5 @@
 Name:		texlive-adobemapping
-Version:	20171031
+Version:	20180303
 Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
