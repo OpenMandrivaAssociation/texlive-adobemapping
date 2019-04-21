@@ -1,6 +1,6 @@
 Name:		texlive-adobemapping
-Version:	20180303
-Release:	3
+Version:	20190207
+Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
