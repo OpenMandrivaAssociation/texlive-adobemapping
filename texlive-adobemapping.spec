@@ -1,11 +1,11 @@
 Name:		texlive-adobemapping
-Version:	20190402
+Version:	51787
 Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r51787.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ files now made available for distribution by Adobe systems
 incorporated.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -30,7 +30,7 @@ incorporated.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
