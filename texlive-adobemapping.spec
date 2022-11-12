@@ -5,7 +5,7 @@ Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/adobemapping
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r51787.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
