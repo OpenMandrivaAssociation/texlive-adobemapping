@@ -3,7 +3,7 @@ Version:	66552
 Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/adobemapping
+URL:		https://www.ctan.org/tex-archive/support/adobemapping
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r%{version}.tar.xz
 BuildArch:	noarch
