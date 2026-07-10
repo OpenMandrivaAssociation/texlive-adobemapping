@@ -1,39 +1,21 @@
-Name:		texlive-adobemapping
-Version:	66552
+%global tl_name adobemapping
+%global tl_revision 66552
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
 Summary:	Adobe cmap and pdfmapping files
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/support/adobemapping
-License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r%{version}.tar.xz
+License:	bsd
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/adobemapping.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package comprises the collection of CMap and PDF mapping
-files now made available for distribution by Adobe systems
-incorporated.
+The package comprises the collection of CMap and PDF mapping files made
+available for distribution by Adobe.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/fonts/cmap/adobemapping
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar fonts %{buildroot}%{_texmfdistdir}
